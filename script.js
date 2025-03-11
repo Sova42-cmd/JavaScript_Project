@@ -1,23 +1,24 @@
-// // lesson 1. variables
-//
-// const myName = "David"
-//
 // let myAge = 17
+// let myCurrentAge = myAge + 1
+// console.log(myCurrentAge)
+
+// let myName = "David"
+// let myAge = 17
+
+// let myFriendName = "Aram"
+// let myFriendAge = 47
+
+// function greeting(sourceName, sourceAge) {
+//     return "Hello my name " + sourceName + " I'm " + sourceAge + " Years old."
+// }
+
+// const greeting = (sourceName, sourceAge) => {
 //
-// myAge = 20
+//     const myComputer = "Mac"
 //
-// console.log(myAge)
-
-// lesson 2. array
-
-let num = 17
-const isStudent = "David"
-
-// symbols $ and _ are allowed for some reason
-
-// Restricted -> numbers in beginning, - symbol, and service names
-// let 42num = 11
-// let my-num = 1
-// let const/let
-
-alert(num)
+//     return "Hello my name " + sourceName + " I'm " + sourceAge + " Years old."
+// }
+//
+//
+// console.log(greeting(myName, myAge))
+// console.log(greeting(myFriendName, myFriendAge))
