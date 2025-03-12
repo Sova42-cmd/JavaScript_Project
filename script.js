@@ -314,19 +314,27 @@
 // console.log(addNumberCheck(58, 91, "Divide"))
 // console.log(addNumberCheck(58, 91, "random"))
 //
+// //
+// //
+// const phrases = ["Hello","Bye", "Good Morning", "Goodbye", "Good Evening"]
+//
+// function getString(sourceString) {
+//
+//     // let result = phrases.find((element)=>{return element === sourceString});
+//     // let result = phrases.findIndex((element)=>{return element === sourceString});
+//     // let result = phrases.map((element)=>{return element+"!"});
+//     let result = phrases.filter ((element)=>{return element !== sourceString});
 //
 //
-const phrases = ["Hello","Bye", "Good Morning", "Goodbye", "Good Evening"]
+//     return result
+// }
+//
+// console.log(getString("Bye"));
 
-function getString(sourceString) {
+const resultElement = document.getElementById("result");
+const input1=document.getElementById("input1");
+const input2=document.getElementById("input2");
 
-    // let result = phrases.find((element)=>{return element === sourceString});
-    // let result = phrases.findIndex((element)=>{return element === sourceString});
-    // let result = phrases.map((element)=>{return element+"!"});
-    let result = phrases.filter ((element)=>{return element !== sourceString});
-
-
-    return result
-}
-
-console.log(getString("Bye"));
+const sum = Number(input1.value) + Number(input2.value);
+resultElement.textContent = sum
+console.log(typeof sum);
