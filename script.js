@@ -1,4 +1,3 @@
-//
 // let myAge = 17
 // // let myCurrentAge = myAge + 1
 // // console.log(myCurrentAge)
