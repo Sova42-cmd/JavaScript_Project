@@ -149,9 +149,81 @@
 
 // Rest Operator:
 
-const numbers = [3, 6, 9, 12, 15];
-const [first, second, ...rest] = numbers;
+// const numbers = [3, 6, 9, 12, 15];
+// const [first, second, ...rest] = numbers;
+//
+// console.log(first);  // 3
+// console.log(second); // 6
+// console.log(rest);   // 9, 12, 15
 
-console.log(first);  // 3
-console.log(second); // 6
-console.log(rest);   // 9, 12, 15
+// const book = { title: "1984", author: "George Orwell", year: 1949 };
+// const { title, ...rest } = book;
+//
+// console.log(title); //
+// console.log(rest);  //
+
+// Renaming Variables while Destructuring
+
+// const user = { username: "Alice", age: 22 };
+// const { username, age: yearsOld } = user;
+//
+// console.log(username); // Alice
+// console.log(yearsOld); // 22
+
+// Extract Values from a Function Return (Object)
+
+// function getCar() {
+//     return { brand: "Tesla", model: "Model S", year: 2023 };
+// }
+//
+// const { brand, model, year } = getCar();
+//
+// console.log(brand); // "Tesla"
+// console.log(model); // "Model S"
+// console.log(year);  // 2023
+
+// Nested Object Destructuring
+
+// const person = {
+//     name: "Eve",
+//     address: {
+//         city: "New York",
+//         street: "5th Avenue"
+//     }
+// };
+//
+// const { address: { street } } = person;
+//
+// console.log(street); // "5th Avenue"
+
+// let user = {
+//     username: "JohnDoe",
+//     email: "john@example.com",
+//     age: 30,
+// };
+//
+// // TODO: Destructure `username` and `email` from `user`
+//
+// let { username, email } = user;
+//
+// console.log(username, email);
+//
+// let subjects = ["Math", "Physics", "History", "Biology"];
+//
+// // Destructuring the first two subjects
+// let [firstSubject, secondSubject] = subjects;
+//
+// console.log(firstSubject, secondSubject);
+
+// let tasks = [
+//     { id: 1, name: "Task 1", isDone: true },
+//     { id: 2, name: "Task 2", isDone: false },
+// ];
+//
+// let task0 = { id: 0, name: "Task 0", isDone: false };
+// let task9 = { id: 9, name: "Task 9", isDone: true };
+//
+// // Creating a new array with task0 at the beginning and task9 at the end
+// let newTasks = [task0, ...tasks, task9];
+//
+// console.log(newTasks);
