@@ -303,5 +303,72 @@
 // console.log(`updatedStudent`,updatedStudent);
 // // Expected output: { name: "Emma", subjects: ["Math", "English", "Physics"] }
 
+// ex4 adding property (key+value)
+
+// let car = {
+//     brand: "Toyota",
+//     model: "Corolla",
+//     year: 2020
+// };
+//
+// // Your code here
+//
+// let updatedCar = {...car, color: "red"};
+//
+//
+// console.log(`car`,car);
+// console.log(`updatedCar`,updatedCar);
+// Expected output:
+// { brand: "Toyota", model: "Corolla", year: 2020, color: "red" }
+
+// ex5
+
+// let updatedCompany = {...company,departments: {...company,departments,IT}};
+
+let company = {
+    name: "TechCorp",
+    departments: {
+        IT: {
+            employees: [
+                { name: "Alice", salary: 50000 },
+                { name: "Bob", salary: 45000 }
+            ]
+        }
+    }
+};
+
+// Your code here
+
+// not my code
+
+const updatedCompany = {
+    ...company,
+    departments: {
+        ...company.departments,
+        IT: {
+            ...company.departments.IT,
+            employees: company.departments.IT.employees.map(
+                employee => employee.name === "Alice"
+                    ? { ...employee, salary: 55000 }
+                    : employee
+            )
+        }
+    }
+};
 
 
+
+console.log(updatedCompany);
+// change alice salary to 55000
+// Expected output:
+// {
+//   name: "TechCorp",
+//   departments: {
+//     IT: {
+//       employees: [
+//         { name: "Alice", salary: 55000 }, // Updated salary
+//         { name: "Bob", salary: 45000 }
+//       ]
+//     }
+//   }
+// }
