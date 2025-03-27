@@ -227,3 +227,81 @@
 // let newTasks = [task0, ...tasks, task9];
 //
 // console.log(newTasks);
+
+// let person1 = {
+//     name: "John",
+//     age: 32,
+//     isMarried: true,
+//     hasBeen: ["Armenia", "Russia", "Germany", "Mexico"],
+//     children: {boys:["Jake", "Babken"], girls: ["Vika", "Varduhi"]}
+// }
+//
+// let updatedPerson1 = {...person1,children:""}
+//
+// console.log(`person1`, person1)
+// console.log(`updatedPerson1`, updatedPerson1)
+// console.log(person1.hasBeen)
+
+// let book = {
+//     title: "The Pragmatic Programmer",
+//     author: {
+//         name: "Andy Hunt",
+//         age: 55
+//     }
+// };
+//
+// let updatedBook = {...book}
+
+// Expected output: "The Pragmatic Programmer"
+// Expected output: "Andy Hunt"
+
+// console.log(book.title); required another solution
+
+// // // ex1
+
+// let person = {
+//     name: "Alex",
+//     age: 30,
+//     isMarried: false
+// };
+//
+// // Your code here
+//
+// let updatedPerson = {...person, hobby: "Reading"};
+//
+// console.log(updatedPerson);
+// Expected output: { name: "Alex", age: 30, isMarried: false, hobby: "Reading" }
+
+// ex2
+
+// let user = {
+//     name: "Mike",
+//     hobbies: ["music", "sports"]
+// };
+//
+// // Your code here
+//
+// let updatedUser = {...user,hobbies: [...user.hobbies,"gaming"]};
+//
+// console.log(updatedUser);
+// Expected output: { name: "Mike", hobbies: ["music", "sports", "gaming"] }
+
+// ex3
+
+// let student = {
+//     name: "Emma",
+//     subjects: ["Math", "English"]
+// };
+//
+// // Your code here
+//
+// let updatedStudent ={...student, subjects: [...student.subjects, "Physics"]};
+//
+// // pay attention to key name
+//
+// console.log(`student`,student)
+// console.log(`updatedStudent`,updatedStudent);
+// // Expected output: { name: "Emma", subjects: ["Math", "English", "Physics"] }
+
+
+
