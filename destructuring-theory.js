@@ -325,40 +325,40 @@
 
 // let updatedCompany = {...company,departments: {...company,departments,IT}};
 
-let company = {
-    name: "TechCorp",
-    departments: {
-        IT: {
-            employees: [
-                { name: "Alice", salary: 50000 },
-                { name: "Bob", salary: 45000 }
-            ]
-        }
-    }
-};
+// let company = {
+//     name: "TechCorp",
+//     departments: {
+//         IT: {
+//             employees: [
+//                 { name: "Alice", salary: 50000 },
+//                 { name: "Bob", salary: 45000 }
+//             ]
+//         }
+//     }
+// };
 
 // Your code here
 
 // not my code
 
-const updatedCompany = {
-    ...company,
-    departments: {
-        ...company.departments,
-        IT: {
-            ...company.departments.IT,
-            employees: company.departments.IT.employees.map(
-                employee => employee.name === "Alice"
-                    ? { ...employee, salary: 55000 }
-                    : employee
-            )
-        }
-    }
-};
-
-
-
-console.log(updatedCompany);
+// const updatedCompany = {
+//     ...company,
+//     departments: {
+//         ...company.departments,
+//         IT: {
+//             ...company.departments.IT,
+//             employees: company.departments.IT.employees.map(
+//                 employee => employee.name === "Alice"
+//                     ? { ...employee, salary: 55000 }
+//                     : employee
+//             )
+//         }
+//     }
+// };
+//
+//
+//
+// console.log(updatedCompany);
 // change alice salary to 55000
 // Expected output:
 // {
@@ -369,6 +369,34 @@ console.log(updatedCompany);
 //         { name: "Alice", salary: 55000 }, // Updated salary
 //         { name: "Bob", salary: 45000 }
 //       ]
+//     }
+//   }
+// }
+
+let product = {
+    name: "Laptop",
+    specs: {
+        storage: {
+            type: "SSD",
+            capacity: 256
+        }
+    }
+};
+
+// TODO: Create an updatedProduct object
+// Use the spread operator to update the storage capacity to 512
+// Ensure the original object remains unchanged
+
+let updatedProduct = {...product, specs: {...product.specs.storage, capacity: 512}};
+
+console.log(updatedProduct);
+// Expected output:
+// {
+//   name: "Laptop",
+//   specs: {
+//     storage: {
+//       type: "SSD",
+//       capacity: 512 // Updated capacity
 //     }
 //   }
 // }
